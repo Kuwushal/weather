@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="locationInput" type = "text" placeholder="Enter name of the city" required>
+            <button id="searchButton" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                
+            </button>
+        </div>
+        
+        <p class="invalid" style="display: none;">City Not Found. Enter a valid city name.</p>
+        <p class="wrong" style="display: none;">Something went wrong. Please Try Again Later</p>
+
+        <div class="weather">
+            <img id="weatherImage" src="https://openweathermap.org/img/wn/02d@4x.png" alt="weather">
+            <h1 class="temp">22&deg;C</h1>
+            <h2 class="city">Kathmandu</h2>
+            <h4 class="description">Cloudy</h4>
+
+            <div class="sun">
+                <div>  
+                    <p>Sunrise 🌄</p>
+                    <p class="sunrise">---</p>
+                </div>
+                <div>  
+                    <p>Sunset 🌇</p>
+                    <p class="sunset">---</p>
+                </div> 
+            </div>
+
+            <div class="info">
+                <div class="half">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p> Humidity</p>
+                    </div>
+                </div>
+                <div class="half">
+                    <div>
+                        <p class="wind">100m/s</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script src="script.js"></script> 
+<!-- API key = 17f9d003b7fa849c19f6e8e42c304fef -->
+</body>/
+</html>
